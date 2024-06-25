@@ -1,0 +1,249 @@
+{
+  "name": "demo",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "--base_url---asdf",
+      "seq": 7,
+      "request": {
+        "url": "{{base_url}}/asdf",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n    \"yo\": \"yo\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "bearer",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": "undefined"
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "--base_url---login",
+      "seq": 8,
+      "request": {
+        "url": "{{base_url}}/login",
+        "method": "POST",
+        "headers": [],
+        "body": {
+          "mode": "text",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "health",
+      "seq": 1,
+      "request": {
+        "url": "{{base_url}}/healthz",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "interest",
+      "seq": 6,
+      "request": {
+        "url": "{{base_url}}/treasury/max_interest",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "bearer",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": "undefined"
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "launches",
+      "seq": 3,
+      "request": {
+        "url": "{{base_url}}/spacex/launches",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "bearer",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": "undefined"
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "login",
+      "seq": 2,
+      "request": {
+        "url": "{{base_url}}/login",
+        "method": "POST",
+        "headers": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n    \"username\": \"admin\",\n    \"password\": \"pass\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "random ship",
+      "seq": 4,
+      "request": {
+        "url": "{{base_url}}/spacex/ship",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "bearer",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": "undefined"
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "ship",
+      "seq": 5,
+      "request": {
+        "url": "{{base_url}}/spacex/ship/{{ship_id}}",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "bearer",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": "undefined"
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    }
+  ],
+  "environments": []
+}
