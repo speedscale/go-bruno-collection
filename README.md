@@ -1,21 +1,18 @@
 # go-bruno-collection
 
-[![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/speedscale/go-bruno-collection)
-[![Report](https://goreportcard.com/badge/github.com/speedscale/go-speedscale-collection)](https://goreportcard.com/report/github.com/speedscale/go-bruno-collection)
-[![Code coverage](https://codecov.io/gh/speedscale/go-speedscale-collection/branch/master/graph/badge.svg)](https://codecov.io/gh/speedscale/go-bruno-collection)
 
 Go module to import and export Bruno collections.
 
 This package provides a set of structures and import/export utilities for working with Bruno collections in Go. Use this package if you want to work natively with Bruno collection data and want basic data validation.
 
-This project is not endorsed by or otherwise affiliated with Bruno itself. For more information on the Bruno project, please visit the [project](https://github.com/usebruno/bruno). This project was inspired by, but shares no code with, its Postman equivalent [go-postman-collection](https://github.com/rbretecher/go-postman-collection/tree/master).
+This project is not endorsed by or otherwise affiliated with Bruno project or company. For more information on the Bruno project, please visit their GitHub [repository](https://github.com/usebruno/bruno). We encourage you to support Bruno directly if desired. This project was inspired by, but shares no code with, its Postman equivalent [go-postman-collection](https://github.com/rbretecher/go-postman-collection/tree/master).
 
 ## Examples
 
 ### Collections
 
-[Bruno](https://github.com/usebruno/bruno) imports and exports requests using a custom JSON format called a collection. These collections are well structured with data integrity rules for validation. This project only addresses working with exported Bruno collections in go and does not address working with Bruno's internal file structure.
+[Bruno](https://github.com/usebruno/bruno) imports and exports requests using a custom JSON format called a collection. These collections are well structured with data integrity rules for validation. This project only addresses working with exported Bruno collections in go and does not address working with Bruno's internal file structure. If you need to work with `.bru` files directly then you should go to the source as this project is not targeted at that use case.
 
 #### Read a Bruno Collection
 
@@ -62,3 +59,7 @@ func main() {
 	defer os.Remove("test_bruno_collection.json")
 }
 ```
+
+## Contribution Guide
+
+Feel free to open Merge Requests for any topic. This project is supported but not tightly controlled as far as features, bug fixes or enhancements. All contributions will be positively considered.
